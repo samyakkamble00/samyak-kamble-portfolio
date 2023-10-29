@@ -1,8 +1,7 @@
 import React from "react";
 import samImg from "../assets/Samyak_Kamble_.jpg";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import SocialLink from "./SocialLinks";
-import Portfolio from "./Portfolio";
+
 import { Link } from "react-scroll";
 const Home = () => {
   return (
