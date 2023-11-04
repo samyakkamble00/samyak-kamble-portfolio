@@ -1,31 +1,41 @@
+
 import React from "react";
 
 
 const Portfolio = () => {
   const portfolios = [
+    
     {
-      id: 1,
-      src:"https://images.pexels.com/photos/4439901/pexels-photo-4439901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    },
-    {
-      id: 2,
-      src: "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    },
-    {
-      id: 3,
-      src: "https://images.pexels.com/photos/4974914/pexels-photo-4974914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    },
-    {
-      id: 4,
-      src: "https://images.pexels.com/photos/6190327/pexels-photo-6190327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      id: 6,
+      src:"https://digitalclock-hcj.netlify.app/",
+      code:"https://github.com/samyakkamble00/Digital-clock",
     },
     {
       id: 5,
-      src: "https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      src:"https://netflixclonebysam.netlify.app/",
+      code:"https://github.com/samyakkamble00/NetflixClone",
+    },
+      
+      
+    {
+      id: 1,
+      src:"https://ecomersprojectclone.netlify.app/",
+      code:"https://github.com/samyakkamble00/ecomersprojectclone/tree/main/src/Ecommerce",
     },
     {
-      id: 6,
-      src: "https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      id: 2,
+      src:"https://colorbackgroundchange.netlify.app/",
+      code:"https://github.com/samyakkamble00/ColorGenretar",
+    },
+    {
+      id: 3,
+      src:"https://stop-watch-pro.netlify.app/",
+      code:"https://github.com/samyakkamble00/StopWatch",
+    },
+    {
+      id: 4,
+      src:"https://fabulous-bienenstitch-49cb8c.netlify.app/",
+      code:"https://github.com/samyakkamble00/Calculater",
     },
   ];
 
@@ -43,20 +53,22 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src ,code}) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md object-center duration-200 hover:scale-105"
-              />
+            <iframe src={src} className="w-full overflow-hidden h-52 rounded-md object-center duration-200 hover:scale-105" title="Example Website"></iframe>
+            
+
               <div className="flex items-center justify-center">
+                <a href={src} target='_blank'>
                 <button className="w-1/2 px-4 py-2 m-4 duration-200 hover:scale-105">
                   Demo
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
-                </button>
+                </a>
+               <a href={code} target='_blank'>
+               <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+               Code
+             </button>
+             </a>
               </div>
             </div>
           ))}
