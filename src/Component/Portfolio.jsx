@@ -6,36 +6,41 @@ const Portfolio = () => {
   const portfolios = [
     
     {
-      id: 6,
+      id: 1,
       src:"https://digitalclock-hcj.netlify.app/",
       code:"https://github.com/samyakkamble00/Digital-clock",
     },
     {
-      id: 5,
+      id: 2,
       src:"https://netflixclonebysam.netlify.app/",
       code:"https://github.com/samyakkamble00/NetflixClone",
     },
       
       
     {
-      id: 1,
+      id: 3,
       src:"https://ecomersprojectclone.netlify.app/",
       code:"https://github.com/samyakkamble00/ecomersprojectclone/tree/main/src/Ecommerce",
     },
     {
-      id: 2,
+      id: 4,
       src:"https://colorbackgroundchange.netlify.app/",
       code:"https://github.com/samyakkamble00/ColorGenretar",
     },
     {
-      id: 3,
+      id: 5,
       src:"https://stop-watch-pro.netlify.app/",
       code:"https://github.com/samyakkamble00/StopWatch",
     },
     {
-      id: 4,
+      id: 6,
       src:"https://fabulous-bienenstitch-49cb8c.netlify.app/",
       code:"https://github.com/samyakkamble00/Calculater",
+    },
+    {
+      id: 7,
+      src:"https://todo-list-p1.netlify.app/",
+      code:"https://github.com/samyakkamble00/todo_list",
     },
   ];
 
